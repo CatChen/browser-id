@@ -1,4 +1,4 @@
-const browserId = require('../browserId');
+const browserId = require('../browserID');
 const Storage = require('versioned-storage');
 
 jest.mock('versioned-storage');

@@ -4858,6 +4858,11 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+versioned-storage@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.0.2.tgz#f793507248f41828613e7d68773aa1c455145608"
+  integrity sha512-jP7vk1a90xQuwl9UozQIcetjLJVxTh8TXXRfJIH0mJpym7jiQAF9vbfFmDJdQ1sbyMA3bDnumQWnpaS7kPhLtQ==
+
 vlq@^0.2.1:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"

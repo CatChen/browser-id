@@ -72,6 +72,7 @@
     "pretty-quick": "^2.0.1"
   },
   "dependencies": {
-    "uuid": "^3.3.3"
+    "uuid": "^3.3.3",
+    "versioned-storage": "^1.0.2"
   }
 }

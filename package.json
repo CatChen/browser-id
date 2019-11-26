@@ -73,6 +73,6 @@
   },
   "dependencies": {
     "uuid": "^3.3.3",
-    "versioned-storage": "^1.0.2"
+    "versioned-storage": "^1.0.6"
   }
 }

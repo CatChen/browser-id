@@ -4820,6 +4820,11 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
+typescript@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.2.tgz#27e489b95fa5909445e9fef5ee48d81697ad18fb"
+  integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
+
 uglify-js@^3.1.4:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.6.8.tgz#5edcbcf9d49cbb0403dc49f856fe81530d65145e"
@@ -4925,10 +4930,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-versioned-storage@^1.0.2:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.0.6.tgz#81a6baa273ef5b03c19494b30354dd66325ee4d8"
-  integrity sha512-Ivca1iuave9niILlmx5o7e8tJ+8YAgOEsPOkraApBd9DzGDNfzjmjPfPzFF2acHcnF40AsK4/oRR0nrupf/ucg==
+versioned-storage@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.1.0.tgz#20fee248bffcdd64bc3412401a1a9c297dbaf4e6"
+  integrity sha512-oS+unMiWJjaVAFCkNJvmHiu6LDb8KrzT8YmfrQpAmn8/yKnW4Roq3lcVMxQofT9Oidqg8oWChbGYl4FGQJyPPg==
 
 vlq@^0.2.1:
   version "0.2.3"

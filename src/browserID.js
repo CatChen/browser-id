@@ -1,6 +1,6 @@
 // @flow strict
 
-const uuid = require('uuid');
+const uuid = require('uuid').v4;
 const Storage = require('versioned-storage');
 
 const STORAGE_NAME = 'browser_id';

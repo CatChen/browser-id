@@ -71,7 +71,7 @@
     "jest": "^26.0.0",
     "prettier": "^2.0.1",
     "pretty-quick": "^2.0.1",
-    "typescript": "^3.7.2"
+    "typescript": "^4.0.2"
   },
   "dependencies": {
     "uuid": "^8.0.0",

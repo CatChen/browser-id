@@ -5081,9 +5081,9 @@ verror@1.10.0:
     extsprintf "^1.2.0"
 
 versioned-storage@^1.1.0:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.2.5.tgz#e31e69ffd952887a97591aff8e4bb1e22fc0a8b9"
-  integrity sha512-Ru1geYp/vGK+u65gQPpe1oBXeWJ4WTn+EIjUwxhvijZg+KxJZkUhm1A09J1iD5x5GVS3d1X9j4b1Fqk2cxlxJA==
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.2.7.tgz#beb63ccedacce400b20925428af11aa5b632b43c"
+  integrity sha512-5q7vNLSmyb+IVLgfneCJpm64el/dzMRlNCoT+UawSn4jT6lD7KTTqAX/TdRNrnicpj+P9PeM1ljHVWuQLne/Kg==
 
 vlq@^0.2.1:
   version "0.2.3"

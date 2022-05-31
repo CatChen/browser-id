@@ -7,7 +7,11 @@ registries:
   npm-registry-npm-pkg-github-com-catchen:
     type: npm-registry
     url: https://npm.pkg.github.com/CatChen
+<<<<<<< HEAD
     token: '${{secrets.GITHUB_TOKEN}}'
+=======
+    token: '${{secrets.NPM_GITHUB_TOKEN}}'
+>>>>>>> 93fc92e (Providing token for public npm registry (#286))
 
 updates:
   - package-ecosystem: npm

@@ -77,6 +77,6 @@
   },
   "dependencies": {
     "uuid": "^8.0.0",
-    "versioned-storage": "1.2.15"
+    "versioned-storage": "1.3.0"
   }
 }

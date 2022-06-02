@@ -7,6 +7,8 @@
   "scripts": {
     "test": "jest src",
     "build": "babel src -d lib --ignore '**/__tests__/**' && flow-copy-source -v -i '**/__tests__/**' src lib && tsc",
+    "registry:github": "cat package.json | json -e 'this.name = \"@CatChen/\" + this.name; this.publishConfig = {}; this.publishConfig.registry = \"https://npm.pkg.github.com/\"' > package.github.json && mv -f package.github.json package.json",
+    "registry:npm": "cat package.json | json -e 'this.name = this.name.replace(new RegExp(\"^@CatChen/\"), \"\"); this.publishConfig = undefined' > package.npm.json && mv -f package.npm.json package.json",
     "prepublish": "npm run build",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -67,6 +69,7 @@
     "flow-remove-types": "^2.111.3",
     "husky": "7",
     "jest": "^28.1.0",
+    "json": "^11.0.0",
     "pinst": "^3.0.0",
     "prettier": "^2.0.1",
     "pretty-quick": "^3.0.0",

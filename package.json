@@ -1,6 +1,6 @@
 {
   "name": "browser-id",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Unique ID for current browser (client).",
   "main": "index.js",
   "types": "index.d.ts",

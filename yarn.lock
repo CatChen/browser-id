@@ -4236,10 +4236,10 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-versioned-storage@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.3.0.tgz#feb368786dcef90699ff85530d4edff74829c503"
-  integrity sha512-SC6yKU27McwK97hzvF2lJdUf9k9Ha7JDm5UjvTWxIu5qzipOSQoYSdVHsz3+3cZvdENmRllO0NspjYceZtDFig==
+versioned-storage@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-1.3.1.tgz#5cfa173ad5c48d283af1603e9eec6e364242bf31"
+  integrity sha512-mSRTkOfQdUNtyxH9arKqZQBEwnIDQyesrHcswosT8JW/ovAQ10XANMOJ8Ys2pvVyOeLqFFAeXFP3XH04KBQH0A==
 
 vlq@^0.2.1:
   version "0.2.3"

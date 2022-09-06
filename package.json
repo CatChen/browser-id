@@ -78,7 +78,7 @@
     "husky": "8"
   },
   "dependencies": {
-    "uuid": "^8.0.0",
+    "uuid": "^9.0.0",
     "versioned-storage": "2.0.2"
   },
   "engines": {

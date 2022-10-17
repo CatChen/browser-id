@@ -27,6 +27,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn install
       - run: yarn build
+      - run: npm config ls -l
       - run: npm publish
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
@@ -48,6 +49,7 @@ jobs:
       - run: yarn install
       - run: yarn build
       - run: yarn registry:github
+      - run: npm config ls -l
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

@@ -80,7 +80,7 @@
   },
   "dependencies": {
     "uuid": "^9.0.0",
-    "versioned-storage": "2.0.20"
+    "versioned-storage": "2.0.21"
   },
   "engines": {
     "node": ">=14"

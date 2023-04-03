@@ -2398,13 +2398,6 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-ci@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-3.0.1.tgz#db6ecbed1bd659c43dac0f45661e7674103d1867"
-  integrity sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==
-  dependencies:
-    ci-info "^3.2.0"
-
 is-core-module@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.2.0.tgz#97037ef3d52224d85163f5597b2b63d9afed981a"
@@ -4341,10 +4334,10 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-versioned-storage@2.0.29:
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.29.tgz#6328f7da3276594eca0b0fe45640bfe83c9e0bcb"
-  integrity sha512-sUOfJ4yF62zINZdaIyWeKThggyr/I35nR6v9pdVbA7fGK8hX1DcQJNEXrjlJlDcTUfCg4l3CZhNQT8jnbbn+3g==
+versioned-storage@2.0.30:
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.30.tgz#7f2eb803888455419200f7c1633278927cfaf05e"
+  integrity sha512-ssnzDRh/hJ1j4YB+h1JE16IssT8ETAXsjKvsUF0h+ju1SayvjbP+xS8yDuqrgdk/RNykrSQG84McNJv/KI9k8w==
   optionalDependencies:
     husky "8"
 

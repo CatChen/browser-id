@@ -76,7 +76,7 @@
   },
   "dependencies": {
     "uuid": "^9.0.0",
-    "versioned-storage": "2.0.53"
+    "versioned-storage": "2.0.54"
   },
   "engines": {
     "node": ">=14"

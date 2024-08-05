@@ -2449,7 +2449,7 @@ human-signals@^5.0.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-5.0.0.tgz#42665a284f9ae0dade3ba41ebc37eb4b852f3a28"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
 
-husky@9, husky@^9.1.4:
+husky@^9.1.4:
   version "9.1.4"
   resolved "https://registry.yarnpkg.com/husky/-/husky-9.1.4.tgz#926fd19c18d345add5eab0a42b2b6d9a80259b34"
   integrity sha512-bho94YyReb4JV7LYWRWxZ/xr6TtOTt8cMfmQ39MQYJ7f/YE268s3GdghGwi+y4zAeqewE5zYLvuhV0M0ijsDEA==
@@ -4615,12 +4615,13 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-versioned-storage@2.0.65:
-  version "2.0.65"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.65.tgz#0360d9e83df409e74331e48d290e433a127c0ef9"
-  integrity sha512-+j/k532z/8cMwlygibAJ9Emrm8tVEJ7XmDHMyS6v3neKkmJVRiDNOWYxNHJI5YoKR18535/I+4GvDMiSf6eSQg==
+versioned-storage@2.0.66:
+  version "2.0.66"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.66.tgz#2d3122519f94c7e6e3eb5f267d91f7bf9bc6058c"
+  integrity sha512-sZThy2l7/QXtOdgN86MolL+yUSjJhuc63ojXF/Ij69tTBuuG4cNjmXVEaodLJbXMorHqFCPdhFSJ/zpEMyIRqg==
   optionalDependencies:
-    husky "9"
+    husky "^9.1.4"
+    lint-staged "^15.2.7"
 
 vlq@^0.2.1:
   version "0.2.3"

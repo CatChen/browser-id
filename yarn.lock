@@ -4586,10 +4586,10 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-versioned-storage@2.0.69:
-  version "2.0.69"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.69.tgz#ae647193941b099b538a8d97ae45d3e2814c8351"
-  integrity sha512-t3zDzZ1t0PcTDM91z3oD51DPPxry838USQc4jmJiO75bXBCJz3Y/HVTGeHavexwAdx4OadOWlrTgVqD2BnD4LA==
+versioned-storage@2.0.72:
+  version "2.0.72"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-2.0.72.tgz#f520ce1d0aa266a36f5f066ee0947d4c90a621a8"
+  integrity sha512-ZBdjba9PKIOeNREyBJEPdRwMnqSxJ8L5FLnP0OwaDKHHeN9NDklV6J2baPjjCB3rK2DbJkM4QmbHGr0Fx7GWrg==
   optionalDependencies:
     husky "^9.1.4"
     lint-staged "^15.2.7"

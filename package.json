@@ -76,7 +76,7 @@
     "lint-staged": "^15.2.7"
   },
   "dependencies": {
-    "uuid": "^10.0.0",
+    "uuid": "^11.0.3",
     "versioned-storage": "2.0.73"
   },
   "engines": {

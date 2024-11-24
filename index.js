@@ -1,1 +1,1 @@
-module.exports = require('./lib/browserID.js');
+export { default } from './lib/Storage';

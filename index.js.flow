@@ -1,3 +1,2 @@
-// @flow strict
-
-module.exports = require('./lib/browserID.js');
+declare function browserId(): string;
+export default browserId;

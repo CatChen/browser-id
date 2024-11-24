@@ -1,6 +1,6 @@
 {
   "name": "browser-id",
-  "version": "3.0.0-1",
+  "version": "3.0.0-2",
   "description": "Unique ID for current browser (client).",
   "funding": "https://github.com/CatChen/browser-id?sponsor=1",
   "type": "module",

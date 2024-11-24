@@ -31,7 +31,7 @@ on:
       diff-targets:
         description: 'Diff Targets'
         required: false
-        default: '{index.*,lib/**/*,package.json,tsconfig.json,README.md,LICENSE}'
+        default: '{index.*,src/**/*,package.json,deno.json,tsconfig.json,README.md,LICENSE}'
         type: string
       dry-run:
         description: 'Dry run'
@@ -40,14 +40,17 @@ on:
         type: boolean
 
 jobs:
-  build:
-    uses: ./.github/workflows/node.js.yml
+  node:
+    uses: ./.github/workflows/node.yml
+
+  deno:
+    uses: ./.github/workflows/deno.yml
 
   codeql:
     uses: ./.github/workflows/codeql-analysis.yml
 
   release:
-    needs: [build, codeql]
+    needs: [node, deno, codeql]
     concurrency: release
     runs-on: ubuntu-latest
     outputs:
@@ -59,6 +62,16 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          check-latest: true
+          cache: yarn
+
+      - run: |
+          yarn install
+          yarn husky # Set up pre-commit hook so npm version commit will copy the version to deno.json
+
       - id: release
         uses: CatChen/node-package-release-action@v2
         with:
@@ -66,13 +79,21 @@ jobs:
           prerelease: ${{ inputs.prerelease || false }}
           dry-run: ${{ inputs.dry-run || false }}
           skip-if-no-diff: ${{ inputs.skip-if-no-diff || true }}
-          diff-targets: ${{ inputs.diff-targets || '{index.*,lib/**/*,package.json,tsconfig.json,README.md,LICENSE}' }}
+          diff-targets: ${{ inputs.diff-targets || '{index.*,src/**/*,package.json,deno.json,tsconfig.json,README.md,LICENSE}' }}
 
-  publish:
+  npm-publish:
     needs: release
     if: ${{ needs.release.outputs.skipped != 'true' }}
     uses: ./.github/workflows/npm-publish.yml
     secrets: inherit
+    with:
+      tag: ${{ needs.release.outputs.tag }}
+      dry-run: ${{ inputs.dry-run || false }}
+
+  jsr-publish:
+    needs: release
+    if: ${{ needs.release.outputs.skipped != 'true' }}
+    uses: ./.github/workflows/jsr-publish.yml
     with:
       tag: ${{ needs.release.outputs.tag }}
       dry-run: ${{ inputs.dry-run || false }}

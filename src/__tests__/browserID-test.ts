@@ -1,5 +1,5 @@
-import { default as browserId } from '../browserID';
-import { default as Storage } from 'versioned-storage';
+import { browserId } from '../browserID';
+import { Storage } from 'versioned-storage';
 
 jest.mock('versioned-storage');
 jest.dontMock('uuid');

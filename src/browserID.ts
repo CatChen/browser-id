@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import { default as Storage } from 'versioned-storage';
+import { Storage } from 'versioned-storage';
 
 const STORAGE_NAME = 'browser_id';
 const STORAGE_VERSION = 1;
@@ -10,7 +10,7 @@ const storage: Storage<string> = new Storage(STORAGE_NAME, STORAGE_VERSION);
  * The same browser will always return the same identifier.
  * @returns {string} The unique identifier.
  */
-function browserId(): string {
+export function browserId(): string {
   const existingID = storage.read();
   if (existingID === null || existingID === undefined) {
     const newID: string = uuid();
@@ -20,5 +20,3 @@ function browserId(): string {
     return existingID;
   }
 }
-
-export default browserId;

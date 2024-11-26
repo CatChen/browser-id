@@ -1,2 +1,1 @@
-declare function browserId(): string;
-export default browserId;
+declare export function browserId(): string;

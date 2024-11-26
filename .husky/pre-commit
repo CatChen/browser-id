@@ -1,5 +1,6 @@
 VERSION=$(cat package.json | yarn --silent json 'version')
-cat deno.json | yarn --silent json -e 'this.version = "'"$VERSION"'"' > jsr.sync.json
-mv -f jsr.sync.json deno.json
+VERSIONED_STORAGE_SEMVER=$(cat package.json | yarn --silent json 'dependencies.versioned-storage')
+cat deno.json | yarn --silent json -e 'this.version = "'"$VERSION"'"' | yarn --silent json -e 'this.imports["@catchen/versioned-storage"] = "jsr:@catchen/versioned-storage@'"$VERSIONED_STORAGE_SEMVER"'"' > deno.sync.json
+mv -f deno.sync.json deno.json
 git add deno.json
 yarn lint-staged

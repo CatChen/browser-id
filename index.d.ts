@@ -1,1 +1,1 @@
-export { default } from './lib/browserID';
+export * from './lib/browserID';

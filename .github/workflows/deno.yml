@@ -36,6 +36,16 @@ jobs:
 
       - run: deno install
 
+      - run: |
+          # Hack for validating the same dependency version in package.json and deno.json
+          NPM_SEMVER=$(cat package.json | yarn --silent json 'dependencies.versioned-storage')
+          JSR_SERVER=$(cat deno.json | yarn --silent json 'imports.@catchen/versioned-storage' | sed -nE 's/jsr:@catchen\/versioned-storage@(.*)/\1/p')
+          if [[ "$NPM_VERSION" != "$JSR_VERSION" ]]
+          then
+            echo "::error::versioned-storage semver mismatch between package.json ($NPM_SEMVER) and deno.json ($JSR_SERVER)"
+            exit 1
+          fi
+
       - run: deno fmt --check
 
       - run: deno lint
@@ -45,6 +55,6 @@ jobs:
           JSR_VERSION=$(cat deno.json | yarn --silent json 'version')
           if [[ "$NPM_VERSION" != "$JSR_VERSION" ]]
           then
-            echo "Version mismatch between package.json ($NPM_VERSION) and deno.json ($JSR_VERSION)"
+            echo "::error::Version mismatch between package.json ($NPM_VERSION) and deno.json ($JSR_VERSION)"
             exit 1
           fi

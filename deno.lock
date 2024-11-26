@@ -1,8 +1,7 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@catchen/versioned-storage@*": "3.0.0",
-    "jsr:@catchen/versioned-storage@3": "3.0.0",
+    "jsr:@catchen/versioned-storage@^3.1.1": "3.1.1",
     "npm:@babel/plugin-transform-modules-commonjs@^7.25.9": "7.25.9_@babel+core@7.26.0",
     "npm:@eslint/eslintrc@^3.2.0": "3.2.0",
     "npm:@eslint/js@^9.15.0": "9.15.0",
@@ -13,7 +12,7 @@
     "npm:eslint-plugin-flowtype@^8.0.2": "8.0.3_@babel+plugin-syntax-flow@7.26.0__@babel+core@7.26.0_@babel+plugin-transform-react-jsx@7.25.9__@babel+core@7.26.0_eslint@8.57.1",
     "npm:eslint-plugin-prettier@^5.2.1": "5.2.1_eslint@9.15.0_eslint-config-prettier@9.1.0__eslint@9.15.0_prettier@3.3.3",
     "npm:eslint@^9.1.1": "9.15.0",
-    "npm:flow-bin@0.252": "0.252.0",
+    "npm:flow-bin@~0.254.2": "0.254.2",
     "npm:is-ci@^3.0.1": "3.0.1",
     "npm:jest@^29.0.1": "29.7.0",
     "npm:json@11": "11.0.0",
@@ -23,11 +22,11 @@
     "npm:typescript-eslint@^8.15.0": "8.15.0_eslint@9.15.0_@typescript-eslint+parser@8.15.0__eslint@9.15.0__typescript@5.7.2_typescript@5.7.2",
     "npm:typescript@^5.0.2": "5.7.2",
     "npm:uuid@^11.0.3": "11.0.3",
-    "npm:versioned-storage@3": "3.0.0"
+    "npm:versioned-storage@^3.1.1": "3.1.1"
   },
   "jsr": {
-    "@catchen/versioned-storage@3.0.0": {
-      "integrity": "fd7a3c22540e1d8e92933567bc2fbfa1247e9033e9a3dc028aa33b8a28afbb1a"
+    "@catchen/versioned-storage@3.1.1": {
+      "integrity": "f8de30727c498387ed7864234a2a28e54cceecf767d209568325371e75a3e684"
     }
   },
   "npm": {
@@ -1508,8 +1507,8 @@
     "flatted@3.3.2": {
       "integrity": "sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA=="
     },
-    "flow-bin@0.252.0": {
-      "integrity": "sha512-DjWbg5FwSZy+9hO3zzwrxjoak7Fld4pQC0paVji1lF2e8aIqCYvjA2c1Kd4iv3uDmzVDg0MfRSXNKfhR2ql7JQ=="
+    "flow-bin@0.254.2": {
+      "integrity": "sha512-+dnSUPUSt2KepiGWelhWSgFE2XjTS3V+h5RTFRGx/QIS0kYlfINlI6bcG3/J3+oauIaJsT7//Niqe6EhJX2nQQ=="
     },
     "fs.realpath@1.0.0": {
       "integrity": "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="
@@ -2789,8 +2788,8 @@
         "convert-source-map"
       ]
     },
-    "versioned-storage@3.0.0": {
-      "integrity": "sha512-LLeRdG10ED4TiG7J54UdHalyO7VKpbtlCU2n/KELNhITmkqU7vRy/bWb97HDi4kaWOGAxxlr+/SQVdGGvnj2bA==",
+    "versioned-storage@3.1.1": {
+      "integrity": "sha512-LQU+HKA7PMuJ+h25LKTgzZ4o6BJ/yl8R6m/atY20roEsnuByf6Qt3TQTkaXDUTO//Dmz8dq0m/143pElxN+Ddg==",
       "dependencies": [
         "husky",
         "lint-staged"
@@ -2877,7 +2876,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@catchen/versioned-storage@3"
+      "jsr:@catchen/versioned-storage@^3.1.1"
     ],
     "packageJson": {
       "dependencies": [
@@ -2891,7 +2890,7 @@
         "npm:eslint-plugin-flowtype@^8.0.2",
         "npm:eslint-plugin-prettier@^5.2.1",
         "npm:eslint@^9.1.1",
-        "npm:flow-bin@0.252",
+        "npm:flow-bin@~0.254.2",
         "npm:is-ci@^3.0.1",
         "npm:jest@^29.0.1",
         "npm:json@11",
@@ -2901,7 +2900,7 @@
         "npm:typescript-eslint@^8.15.0",
         "npm:typescript@^5.0.2",
         "npm:uuid@^11.0.3",
-        "npm:versioned-storage@3"
+        "npm:versioned-storage@^3.1.1"
       ]
     }
   }

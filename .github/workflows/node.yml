@@ -12,6 +12,7 @@ on:
 
 jobs:
   validate:
+    name: Validate
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
@@ -42,6 +43,7 @@ jobs:
 
       - name: Run ESLint
         uses: CatChen/eslint-suggestion-action@v4
+        if: ${{ matrix.os == 'ubuntu-latest' }} # Prettier replaces \n with \r\n on Windows
         with:
           targets: 'src'
           fail-check: ${{ github.event_name == 'workflow_call' || (github.event_name == 'push' && github.ref == 'refs/heads/main') }}

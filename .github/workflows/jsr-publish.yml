@@ -37,13 +37,14 @@ jobs:
           # Hack for switching from using NPM to JSR
           cat src/browserID.ts | sed "s/'versioned-storage'/'@catchen\\/versioned-storage'/g" > src/browserID.deno.ts
           mv -f src/browserID.deno.ts src/browserID.ts
+          git commit -am 'Switched to JSR'
       - env:
           DRY_RUN: ${{ inputs.dry-run || false }}
         run: |
           deno install
           if [[ "$DRY_RUN" = true ]]
           then
-            deno publish --allow-dirty --dry-run
+            deno publish --dry-run
           else
-            deno publish --allow-dirty
+            deno publish
           fi

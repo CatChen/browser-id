@@ -1,6 +1,6 @@
 {
   "name": "@catchen/browser-id",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "license": "MIT",
   "exports": "./src/browserID.ts",
   "compilerOptions": {

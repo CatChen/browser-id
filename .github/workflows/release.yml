@@ -105,6 +105,7 @@ jobs:
     needs: release
     if: ${{ needs.release.outputs.skipped != 'true' }}
     uses: ./.github/workflows/jsr-publish.yml
+    secrets: inherit
     with:
       tag: ${{ needs.release.outputs.tag }}
       dry-run: ${{ inputs.dry-run || false }}

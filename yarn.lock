@@ -3486,9 +3486,9 @@ v8-to-istanbul@^9.0.1:
     convert-source-map "^1.6.0"
 
 versioned-storage@^3.1.1:
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-3.1.13.tgz#c8c55afed5a119d5380ba6076cdd5ac8740aacc7"
-  integrity sha512-WJR3emIKq0eAccJA3ihn01It+20us/NIqHGvWnPytJFuj1zaGJV28H9jS/tFIBjSHqgB0VeTBk+fYP4ArZ1zkg==
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-3.1.14.tgz#54c4492a478aba3e834834a314dcac1454afb3a2"
+  integrity sha512-VjjVROkQjNHxRIWEDEJjkUAC2k7huPGa77aR9q8UpSW+haYBab7Yprl3c3/QrE9+2C1+g15w4u30VN6rtsrxNA==
   optionalDependencies:
     husky "^9.1.4"
     lint-staged "^15.2.7"

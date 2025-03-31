@@ -13,14 +13,13 @@ on:
         default: false
         required: false
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
   publish-jsr:
     name: Publish to JSR
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/create-github-app-token@v1
         id: get-github-app-token
@@ -33,7 +32,7 @@ jobs:
       - uses: actions/checkout@v4
         if: ${{ !inputs.dry-run }}
         with:
-          ref: ${{ inputs.tag }}
+          ref: ${{ inputs.tag || github.event.release.tag_name }}
       - uses: actions/checkout@v4
         if: ${{ inputs.dry-run }}
         with:
@@ -46,10 +45,11 @@ jobs:
           cat src/browserID.ts | sed "s/'versioned-storage'/'@catchen\\/versioned-storage'/g" > src/browserID.deno.ts
           mv -f src/browserID.deno.ts src/browserID.ts
           git commit -am 'Switched to JSR'
+      - run: |
+          deno install
       - env:
           DRY_RUN: ${{ inputs.dry-run || false }}
         run: |
-          deno install
           if [[ "$DRY_RUN" = true ]]
           then
             deno publish --dry-run

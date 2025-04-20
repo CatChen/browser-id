@@ -1,7 +1,7 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@catchen/versioned-storage@^3.1.1": "3.1.1",
+    "jsr:@catchen/versioned-storage@^3.1.18": "3.1.18",
     "npm:@babel/plugin-transform-modules-commonjs@^7.25.9": "7.25.9_@babel+core@7.26.0",
     "npm:@eslint/eslintrc@^3.2.0": "3.2.0",
     "npm:@eslint/js@^9.15.0": "9.15.0",
@@ -22,11 +22,11 @@
     "npm:typescript-eslint@^8.15.0": "8.15.0_eslint@9.15.0_@typescript-eslint+parser@8.15.0__eslint@9.15.0__typescript@5.7.2_typescript@5.7.2",
     "npm:typescript@^5.0.2": "5.7.2",
     "npm:uuid@^11.0.3": "11.0.3",
-    "npm:versioned-storage@^3.1.1": "3.1.1"
+    "npm:versioned-storage@^3.1.18": "3.1.18"
   },
   "jsr": {
-    "@catchen/versioned-storage@3.1.1": {
-      "integrity": "f8de30727c498387ed7864234a2a28e54cceecf767d209568325371e75a3e684"
+    "@catchen/versioned-storage@3.1.18": {
+      "integrity": "7c6ff4c77e63906f91d03937e402b568f914794be5339212c9922dbdfda0f2e7"
     }
   },
   "npm": {
@@ -62,7 +62,7 @@
         "@babel/traverse",
         "@babel/types",
         "convert-source-map",
-        "debug",
+        "debug@4.3.7",
         "gensync",
         "json5",
         "semver@6.3.1"
@@ -304,7 +304,7 @@
         "@babel/parser",
         "@babel/template",
         "@babel/types",
-        "debug",
+        "debug@4.3.7",
         "globals@11.12.0"
       ]
     },
@@ -339,7 +339,7 @@
       "integrity": "sha512-zdHg2FPIFNKPdcHWtiNT+jEFCHYVplAXRDlQDyqy0zGx/q2parwh7brGJSiTxRk/TSMkbM//zt/f5CHgyTyaSQ==",
       "dependencies": [
         "@eslint/object-schema",
-        "debug",
+        "debug@4.3.7",
         "minimatch@3.1.2"
       ]
     },
@@ -350,7 +350,7 @@
       "integrity": "sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==",
       "dependencies": [
         "ajv",
-        "debug",
+        "debug@4.3.7",
         "espree@9.6.1_acorn@8.14.0",
         "globals@13.24.0",
         "ignore",
@@ -364,7 +364,7 @@
       "integrity": "sha512-grOjVNN8P3hjJn/eIETF1wwd12DdnwFDoyceUJLYYdkpbwq3nLi+4fqrTAONx7XDALqlL220wC/RHSC/QTI/0w==",
       "dependencies": [
         "ajv",
-        "debug",
+        "debug@4.3.7",
         "espree@10.3.0_acorn@8.14.0",
         "globals@14.0.0",
         "ignore",
@@ -403,7 +403,7 @@
       "integrity": "sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==",
       "dependencies": [
         "@humanwhocodes/object-schema",
-        "debug",
+        "debug@4.3.7",
         "minimatch@3.1.2"
       ]
     },
@@ -790,7 +790,7 @@
         "@typescript-eslint/types",
         "@typescript-eslint/typescript-estree",
         "@typescript-eslint/visitor-keys",
-        "debug",
+        "debug@4.3.7",
         "eslint@9.15.0"
       ]
     },
@@ -806,7 +806,7 @@
       "dependencies": [
         "@typescript-eslint/typescript-estree",
         "@typescript-eslint/utils",
-        "debug",
+        "debug@4.3.7",
         "eslint@9.15.0",
         "ts-api-utils"
       ]
@@ -819,7 +819,7 @@
       "dependencies": [
         "@typescript-eslint/types",
         "@typescript-eslint/visitor-keys",
-        "debug",
+        "debug@4.3.7",
         "fast-glob",
         "is-glob",
         "minimatch@9.0.5",
@@ -859,7 +859,7 @@
     "agent-base@6.0.2": {
       "integrity": "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==",
       "dependencies": [
-        "debug"
+        "debug@4.3.7"
       ]
     },
     "ajv@6.12.6": {
@@ -1049,8 +1049,8 @@
         "supports-color@7.2.0"
       ]
     },
-    "chalk@5.3.0": {
-      "integrity": "sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w=="
+    "chalk@5.4.1": {
+      "integrity": "sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w=="
     },
     "char-regex@1.0.2": {
       "integrity": "sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw=="
@@ -1113,8 +1113,8 @@
     "colorette@2.0.20": {
       "integrity": "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w=="
     },
-    "commander@12.1.0": {
-      "integrity": "sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA=="
+    "commander@13.1.0": {
+      "integrity": "sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw=="
     },
     "concat-map@0.0.1": {
       "integrity": "sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg=="
@@ -1144,6 +1144,12 @@
     },
     "debug@4.3.7": {
       "integrity": "sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==",
+      "dependencies": [
+        "ms"
+      ]
+    },
+    "debug@4.4.0": {
+      "integrity": "sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==",
       "dependencies": [
         "ms"
       ]
@@ -1265,7 +1271,7 @@
         "ajv",
         "chalk@4.1.2",
         "cross-spawn",
-        "debug",
+        "debug@4.3.7",
         "doctrine",
         "escape-string-regexp@4.0.0",
         "eslint-scope@7.2.2",
@@ -1312,7 +1318,7 @@
         "ajv",
         "chalk@4.1.2",
         "cross-spawn",
-        "debug",
+        "debug@4.3.7",
         "escape-string-regexp@4.0.0",
         "eslint-scope@8.2.0",
         "eslint-visitor-keys@4.2.0",
@@ -1598,14 +1604,14 @@
       "dependencies": [
         "@tootallnate/once",
         "agent-base",
-        "debug"
+        "debug@4.3.7"
       ]
     },
     "https-proxy-agent@5.0.1": {
       "integrity": "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==",
       "dependencies": [
         "agent-base",
-        "debug"
+        "debug@4.3.7"
       ]
     },
     "human-signals@2.1.0": {
@@ -1741,7 +1747,7 @@
     "istanbul-lib-source-maps@4.0.1": {
       "integrity": "sha512-n3s8EwkdFIJCG3BPKBYvskgXGoy88ARzvegkitk60NxRdwltLOTaH7CUiMRXvwYorl0Q712iEjcWB+fK/MrWVw==",
       "dependencies": [
-        "debug",
+        "debug@4.3.7",
         "istanbul-lib-coverage",
         "source-map"
       ]
@@ -2153,18 +2159,18 @@
         "type-check"
       ]
     },
-    "lilconfig@3.1.2": {
-      "integrity": "sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow=="
+    "lilconfig@3.1.3": {
+      "integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw=="
     },
     "lines-and-columns@1.2.4": {
       "integrity": "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg=="
     },
-    "lint-staged@15.2.10": {
-      "integrity": "sha512-5dY5t743e1byO19P9I4b3x8HJwalIznL5E1FWYnU6OWw33KxNBSLAc6Cy7F2PsFEO8FKnLwjwm5hx7aMF0jzZg==",
+    "lint-staged@15.5.1": {
+      "integrity": "sha512-6m7u8mue4Xn6wK6gZvSCQwBvMBR36xfY24nF5bMTf2MHDYG6S3yhJuOgdYVw99hsjyDt2d4z168b3naI8+NWtQ==",
       "dependencies": [
-        "chalk@5.3.0",
+        "chalk@5.4.1",
         "commander",
-        "debug",
+        "debug@4.4.0",
         "execa@8.0.1",
         "lilconfig",
         "listr2",
@@ -2174,8 +2180,8 @@
         "yaml"
       ]
     },
-    "listr2@8.2.5": {
-      "integrity": "sha512-iyAZCeyD+c1gPyE9qpFu8af0Y+MRtmKOncdGoA2S5EY8iFq99dmmvkNnHiWo+pj0s7yH7l3KPIgee77tKpXPWQ==",
+    "listr2@8.3.2": {
+      "integrity": "sha512-vsBzcU4oE+v0lj4FhVLzr9dBTv4/fHIa57l+GCwovP8MoFNZJTOhGU8PXd4v2VJCbECAaijBiHntiekFMLvo0g==",
       "dependencies": [
         "cli-truncate",
         "colorette",
@@ -2791,8 +2797,8 @@
         "convert-source-map"
       ]
     },
-    "versioned-storage@3.1.1": {
-      "integrity": "sha512-LQU+HKA7PMuJ+h25LKTgzZ4o6BJ/yl8R6m/atY20roEsnuByf6Qt3TQTkaXDUTO//Dmz8dq0m/143pElxN+Ddg==",
+    "versioned-storage@3.1.18": {
+      "integrity": "sha512-XzBsEH/Pg+QiQnmu7JIVLnDFOsMdmI6lAcMw5vLhI9gI0I+hiakPSSr5VxQKJnXHIKsNrxpHo5LqahJAhLi3kg==",
       "dependencies": [
         "husky",
         "lint-staged"
@@ -2855,8 +2861,8 @@
     "yallist@3.1.1": {
       "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
     },
-    "yaml@2.5.1": {
-      "integrity": "sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q=="
+    "yaml@2.7.1": {
+      "integrity": "sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ=="
     },
     "yargs-parser@21.1.1": {
       "integrity": "sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw=="
@@ -2879,7 +2885,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@catchen/versioned-storage@^3.1.1"
+      "jsr:@catchen/versioned-storage@^3.1.18"
     ],
     "packageJson": {
       "dependencies": [
@@ -2903,7 +2909,7 @@
         "npm:typescript-eslint@^8.15.0",
         "npm:typescript@^5.0.2",
         "npm:uuid@^11.0.3",
-        "npm:versioned-storage@^3.1.1"
+        "npm:versioned-storage@^3.1.18"
       ]
     }
   }

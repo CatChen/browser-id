@@ -31,6 +31,6 @@
     ]
   },
   "imports": {
-    "@catchen/versioned-storage": "jsr:@catchen/versioned-storage@^3.1.1"
+    "@catchen/versioned-storage": "jsr:@catchen/versioned-storage@^3.1.18"
   }
 }

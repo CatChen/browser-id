@@ -47,6 +47,9 @@ jobs:
 
       - run: deno install
 
+      - name: Validate package exports
+        run: deno eval 'import "./src/browserID.ts"'
+
       - name: Validate JSR dependency version with NPM dependency version
         run: |
           # Hack for validating the same dependency version in package.json and deno.json

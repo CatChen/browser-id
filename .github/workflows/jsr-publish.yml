@@ -27,11 +27,11 @@ jobs:
       - uses: CatChen/config-git-with-token-action@v2
         with:
           github-token: ${{ steps.get-github-app-token.outputs.token }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ !inputs.dry-run }}
         with:
           ref: ${{ inputs.tag }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ inputs.dry-run }}
         with:
           ref: ${{ github.ref_name || github.ref }}

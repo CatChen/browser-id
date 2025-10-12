@@ -21,7 +21,7 @@
     "npm:ts-jest@^29.2.5": "29.4.0_jest@30.0.0_typescript@5.8.3",
     "npm:typescript-eslint@^8.15.0": "8.34.1_eslint@9.29.0_typescript@5.8.3_@typescript-eslint+parser@8.34.1__eslint@9.29.0__typescript@5.8.3",
     "npm:typescript@^5.0.2": "5.8.3",
-    "npm:uuid@^11.0.3": "11.1.0",
+    "npm:uuid@12": "12.0.0",
     "npm:versioned-storage@^3.1.18": "3.1.22"
   },
   "jsr": {
@@ -2862,8 +2862,8 @@
         "fast-url-parser"
       ]
     },
-    "uuid@11.1.0": {
-      "integrity": "sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==",
+    "uuid@12.0.0": {
+      "integrity": "sha512-USe1zesMYh4fjCA8ZH5+X5WIVD0J4V1Jksm1bFTVBX2F/cwSXt0RO5w/3UXbdLKmZX65MiWV+hwhSS8p6oBTGA==",
       "bin": true
     },
     "uuid@8.3.2": {
@@ -2999,7 +2999,7 @@
         "npm:ts-jest@^29.2.5",
         "npm:typescript-eslint@^8.15.0",
         "npm:typescript@^5.0.2",
-        "npm:uuid@^11.0.3",
+        "npm:uuid@12",
         "npm:versioned-storage@^3.1.18"
       ]
     }

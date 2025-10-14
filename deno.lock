@@ -12,7 +12,7 @@
     "npm:eslint-plugin-flowtype@^8.0.2": "8.0.3_@babel+plugin-syntax-flow@7.27.1__@babel+core@7.27.4_@babel+plugin-transform-react-jsx@7.27.1__@babel+core@7.27.4_eslint@9.29.0",
     "npm:eslint-plugin-prettier@^5.2.1": "5.4.1_eslint@9.29.0_eslint-config-prettier@10.1.5__eslint@9.29.0_prettier@3.5.3",
     "npm:eslint@^9.1.1": "9.29.0",
-    "npm:flow-bin@0.287": "0.287.0",
+    "npm:flow-bin@0.288": "0.288.0",
     "npm:is-ci@^4.1.0": "4.1.0",
     "npm:jest@30": "30.0.0",
     "npm:json@11": "11.0.0",
@@ -1572,8 +1572,8 @@
     "flatted@3.3.3": {
       "integrity": "sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg=="
     },
-    "flow-bin@0.287.0": {
-      "integrity": "sha512-GYASmje2SOjhSm6Xr7itYbeiAmPm+lNzF/vAHsFE8aj7lCCPnLE6YePj6mVZEZKqqtRmP5SbPA5+mOxog/o/RA==",
+    "flow-bin@0.288.0": {
+      "integrity": "sha512-b038n/Se62KUplY3W2kIK87SHqlt+rRoAjr+WveRXDMZM0A4GviQYLpsuqsfAwc1Rlh4t+sqEtKBuwAzc2CEaA==",
       "bin": true
     },
     "foreground-child@3.3.1": {
@@ -2990,7 +2990,7 @@
         "npm:eslint-plugin-flowtype@^8.0.2",
         "npm:eslint-plugin-prettier@^5.2.1",
         "npm:eslint@^9.1.1",
-        "npm:flow-bin@0.287",
+        "npm:flow-bin@0.288",
         "npm:is-ci@^4.1.0",
         "npm:jest@30",
         "npm:json@11",

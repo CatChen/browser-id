@@ -60,7 +60,7 @@
     "versioned-storage": "^3.1.18"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "lint-staged": {
     "*.(js,ts,js.flow)": "yarn eslint --fix",

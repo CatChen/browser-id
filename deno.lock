@@ -1,7 +1,7 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@catchen/versioned-storage@^3.1.18": "3.1.22",
+    "jsr:@catchen/versioned-storage@4": "4.0.1",
     "npm:@babel/plugin-transform-modules-commonjs@^7.25.9": "7.27.1_@babel+core@7.27.4",
     "npm:@eslint/eslintrc@^3.2.0": "3.3.1",
     "npm:@eslint/js@^10.0.1": "10.0.1_eslint@10.0.0",
@@ -12,7 +12,7 @@
     "npm:eslint-plugin-flowtype@^8.0.2": "8.0.3_@babel+plugin-syntax-flow@7.27.1__@babel+core@7.27.4_@babel+plugin-transform-react-jsx@7.27.1__@babel+core@7.27.4_eslint@10.0.0",
     "npm:eslint-plugin-prettier@^5.2.1": "5.4.1_eslint@10.0.0_eslint-config-prettier@10.1.5__eslint@10.0.0_prettier@3.5.3",
     "npm:eslint@10": "10.0.0",
-    "npm:flow-bin@0.300": "0.300.0",
+    "npm:flow-bin@0.301": "0.301.0",
     "npm:is-ci@^4.1.0": "4.1.0",
     "npm:jest@30": "30.0.0",
     "npm:json@11": "11.0.0",
@@ -25,8 +25,8 @@
     "npm:versioned-storage@4": "4.0.0"
   },
   "jsr": {
-    "@catchen/versioned-storage@3.1.22": {
-      "integrity": "16036ff985dbb37ca0cb7893882600f86a3e3e4324c1b12663cf6df1f76cf3a1"
+    "@catchen/versioned-storage@4.0.1": {
+      "integrity": "cf81aac8eaa05c1ce47d27f1203a5e2cb3609aac5776f894f7a4c40b73f61c76"
     }
   },
   "npm": {
@@ -1592,8 +1592,8 @@
     "flatted@3.3.3": {
       "integrity": "sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg=="
     },
-    "flow-bin@0.300.0": {
-      "integrity": "sha512-BWmDezNeTsnsK7ebA/pWN/2ren8Zy1wYVpWMsnHTwpeAynJ3C+83Z80SqAr2GPlMCQ8VoT/t+uJwVQwbMt0SBw==",
+    "flow-bin@0.301.0": {
+      "integrity": "sha512-fD0XeuPzcU1tUBnLPv1VSCdq8N80dDhcOPkZtb8QOXoIHEUHqL+R/7gEufQJQO9urQfHg51Ple3/FEb36C+xXg==",
       "bin": true
     },
     "foreground-child@3.3.1": {
@@ -2991,7 +2991,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@catchen/versioned-storage@^3.1.18"
+      "jsr:@catchen/versioned-storage@4"
     ],
     "packageJson": {
       "dependencies": [
@@ -3005,7 +3005,7 @@
         "npm:eslint-plugin-flowtype@^8.0.2",
         "npm:eslint-plugin-prettier@^5.2.1",
         "npm:eslint@10",
-        "npm:flow-bin@0.300",
+        "npm:flow-bin@0.301",
         "npm:is-ci@^4.1.0",
         "npm:jest@30",
         "npm:json@11",

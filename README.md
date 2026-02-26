@@ -14,7 +14,7 @@ For backward compatibility, `browserId()` remains available as an alias of `getB
 
 The package now provides explicit lifecycle controls for common flows like logout, consent withdrawal, and account switching.
 
-- `getBrowserId(): string` - read or create the current browser ID.
+- `getBrowserId(): string` - read the current browser ID or create a new one.
 - `hasBrowserId(): boolean` - check whether an ID exists without generating one.
 - `deleteBrowserId(): void` - remove any persisted browser ID.
 - `rotateBrowserId(): string` - force-generate and persist a new browser ID.

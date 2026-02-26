@@ -69,6 +69,9 @@ it('deletes persisted ID', () => {
   expect(hasBrowserId()).toBe(true);
 
   deleteBrowserId();
+  /* eslint-disable @typescript-eslint/unbound-method */
+  expect(MockedStorage.reset).toHaveBeenCalledTimes(1);
+  /* eslint-enable @typescript-eslint/unbound-method */
   expect(hasBrowserId()).toBe(false);
 
   const secondDeviceId = getBrowserId();

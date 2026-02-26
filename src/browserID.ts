@@ -47,7 +47,7 @@ export function hasBrowserId(): boolean {
 }
 
 /**
- * Delete any persisted browser ID from localStorage.
+ * Delete any persisted browser ID from the underlying storage.
  * @returns {void}
  */
 export function deleteBrowserId(): void {

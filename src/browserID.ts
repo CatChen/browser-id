@@ -17,6 +17,7 @@ function readBrowserId(): string | null {
  * Returns a consistent unique identifier for this browser (or the Node/Deno environment).
  *
  * If no identifier exists yet, one is generated and persisted.
+ * @returns {string} The existing or newly generated browser identifier.
  */
 export function getBrowserId(): string {
   const existingID = readBrowserId();
@@ -31,6 +32,7 @@ export function getBrowserId(): string {
 
 /**
  * Backwards-compatible alias for getBrowserId().
+ * @returns {string} The existing or newly generated browser identifier.
  */
 export function browserId(): string {
   return getBrowserId();
@@ -38,20 +40,28 @@ export function browserId(): string {
 
 /**
  * Check whether a browser ID is already persisted without generating one.
+ * @returns {boolean} True if a browser ID is currently persisted.
  */
 export function hasBrowserId(): boolean {
   return readBrowserId() !== null;
 }
 
 /**
- * Delete any persisted browser ID.
+ * Delete any persisted browser ID from localStorage.
+ * @returns {void}
  */
 export function deleteBrowserId(): void {
+  if (globalThis.localStorage) {
+    globalThis.localStorage.removeItem(`${STORAGE_NAME}:${STORAGE_VERSION}`);
+    return;
+  }
+
   storage.write(undefined);
 }
 
 /**
  * Force-generate a new browser ID, persist it, and return it.
+ * @returns {string} The newly generated browser identifier.
  */
 export function rotateBrowserId(): string {
   const newID = uuid();

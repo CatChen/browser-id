@@ -1,1 +1,5 @@
 declare export function browserId(): string;
+declare export function getBrowserId(): string;
+declare export function hasBrowserId(): boolean;
+declare export function deleteBrowserId(): void;
+declare export function rotateBrowserId(): string;

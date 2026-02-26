@@ -3,20 +3,58 @@ import { Storage } from 'versioned-storage';
 
 const STORAGE_NAME = 'browser_id';
 const STORAGE_VERSION = 1;
-const storage: Storage<string> = new Storage(STORAGE_NAME, STORAGE_VERSION);
+const storage: Storage<string | undefined> = new Storage(
+  STORAGE_NAME,
+  STORAGE_VERSION,
+);
+
+function readBrowserId(): string | null {
+  const existingID = storage.read();
+  return existingID ?? null;
+}
 
 /**
- * A function that returns a consistent unique identifier for the browser (or the Node/Deno environment).
- * The same browser will always return the same identifier.
- * @returns {string} The unique identifier.
+ * Returns a consistent unique identifier for this browser (or the Node/Deno environment).
+ *
+ * If no identifier exists yet, one is generated and persisted.
  */
-export function browserId(): string {
-  const existingID = storage.read();
-  if (existingID === null || existingID === undefined) {
-    const newID: string = uuid();
-    storage.write(newID);
-    return newID;
-  } else {
+export function getBrowserId(): string {
+  const existingID = readBrowserId();
+  if (existingID !== null) {
     return existingID;
   }
+
+  const newID = uuid();
+  storage.write(newID);
+  return newID;
+}
+
+/**
+ * Backwards-compatible alias for getBrowserId().
+ */
+export function browserId(): string {
+  return getBrowserId();
+}
+
+/**
+ * Check whether a browser ID is already persisted without generating one.
+ */
+export function hasBrowserId(): boolean {
+  return readBrowserId() !== null;
+}
+
+/**
+ * Delete any persisted browser ID.
+ */
+export function deleteBrowserId(): void {
+  storage.write(undefined);
+}
+
+/**
+ * Force-generate a new browser ID, persist it, and return it.
+ */
+export function rotateBrowserId(): string {
+  const newID = uuid();
+  storage.write(newID);
+  return newID;
 }

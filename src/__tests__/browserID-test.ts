@@ -11,9 +11,13 @@ jest.mock('versioned-storage');
 jest.dontMock('uuid');
 
 const MockedStorage = Storage as jest.MockedClass<typeof Storage<string>>;
+let storedId: string | null = null;
 
 beforeEach(() => {
-  let storedId: string | null = null;
+  storedId = null;
+  MockedStorage.reset = jest.fn().mockImplementation(() => {
+    storedId = null;
+  });
   MockedStorage.mock.instances[0].write = jest
     .fn()
     .mockImplementation((id: string | undefined) => {

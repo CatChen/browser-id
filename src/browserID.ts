@@ -51,12 +51,7 @@ export function hasBrowserId(): boolean {
  * @returns {void}
  */
 export function deleteBrowserId(): void {
-  if (globalThis.localStorage) {
-    globalThis.localStorage.removeItem(`${STORAGE_NAME}:${STORAGE_VERSION}`);
-    return;
-  }
-
-  storage.write(undefined);
+  Storage.reset();
 }
 
 /**

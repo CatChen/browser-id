@@ -4,7 +4,7 @@ import {
   getBrowserId,
   hasBrowserId,
   rotateBrowserId,
-} from '../browserID';
+} from '../browserID.js';
 import { Storage } from 'versioned-storage';
 
 jest.mock('versioned-storage');

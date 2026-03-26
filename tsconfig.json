@@ -4,8 +4,9 @@
     "outDir": "lib",
     "declaration": true,
     "lib": ["es2015", "dom"],
-    "module": "es2022",
-    "moduleResolution": "bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "types": ["jest"]

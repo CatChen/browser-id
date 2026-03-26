@@ -5,9 +5,10 @@
     "declaration": true,
     "lib": ["es2015", "dom"],
     "module": "es2022",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["jest"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib"]

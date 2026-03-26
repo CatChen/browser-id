@@ -6,7 +6,6 @@
     "lib": ["es2015", "dom"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "types": ["jest"]

@@ -9,8 +9,6 @@ export default {
       'ts-jest',
       {
         useESM: true,
-        diagnostics: { ignoreCodes: ['TS151002'] },
-        tsconfig: { isolatedModules: false },
       },
     ],
     '\\.jsx?$': 'babel-jest',

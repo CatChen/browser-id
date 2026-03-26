@@ -16,5 +16,7 @@ export default {
   transformIgnorePatterns: ['node_modules/(?!(uuid|versioned-storage))'],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
+    '^versioned-storage$':
+      '<rootDir>/node_modules/versioned-storage/lib/Storage.js',
   },
 };

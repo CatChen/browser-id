@@ -3963,10 +3963,10 @@ v8-to-istanbul@^9.0.1:
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
 
-versioned-storage@^4.0.0:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-4.0.5.tgz#43e60bef93736ac6259cf0cf71334b860f5acb70"
-  integrity sha512-xcpsHvm16pBDXVFnuCviP9qKB59n3dzNLZvXbyk3GsxE2H7PGLgl1b4OAbA2qPOma2zD4jabB63Y4a4rpNXPKQ==
+versioned-storage@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/versioned-storage/-/versioned-storage-4.0.6.tgz#7637b3103884dcd9cb1bd9288178198d9648dff5"
+  integrity sha512-VLLwMB1iTPcCyDI0hrQgbe0guTI81JUIjhTaufq38xSPpauVMy+ESTG+xvHo7VAL1w2Ts5L264laL4FIDQKqMw==
   optionalDependencies:
     husky "^9.1.4"
     lint-staged "^16.0.0"
@@ -4063,9 +4063,9 @@ yallist@^3.0.2:
   integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
 
 yaml@^2.8.2:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.3.tgz#a0d6bd2efb3dd03c59370223701834e60409bd7d"
-  integrity sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.2.tgz#5694f25eca0ce9c3e7a9d9e00ce0ddabbd9e35c5"
+  integrity sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==
 
 yargs-parser@^21.1.1:
   version "21.1.1"

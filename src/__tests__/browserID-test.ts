@@ -1,3 +1,4 @@
+import { Storage } from 'versioned-storage';
 import {
   browserId,
   deleteBrowserId,
@@ -5,7 +6,6 @@ import {
   hasBrowserId,
   rotateBrowserId,
 } from '../browserID.js';
-import { Storage } from 'versioned-storage';
 
 jest.mock('versioned-storage');
 jest.dontMock('uuid');

@@ -13,6 +13,8 @@
     }
   },
   "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint -c eslint.config.js",
     "test": "jest",
     "build": "tsc",
     "registry:github": "cat package.json | json -e 'this.name = \"@CatChen/\" + this.name; this.publishConfig = {}; this.publishConfig.registry = \"https://npm.pkg.github.com/\"' > package.github.json && mv -f package.github.json package.json",

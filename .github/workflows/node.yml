@@ -41,15 +41,10 @@ jobs:
 
       - run: yarn install
 
-      - name: Run ESLint
-        uses: CatChen/eslint-suggestion-action@v4
-        if: ${{ matrix.os == 'ubuntu-latest' }} # Prettier replaces \n with \r\n on Windows
-        with:
-          targets: 'src'
-          fail-check: ${{ github.event_name == 'workflow_call' || (github.event_name == 'push' && github.ref == 'refs/heads/main') }}
-
-      - name: Validate code with TypeScript
-        run: yarn build
+      - name: Reformat
+        run: |
+          yarn prettier --write .
+          yarn lint --fix || true # Ignore errors and leave them to the ESLint workflow
 
       - name: Push changes back to the Pull Request
         uses: CatChen/check-git-status-action@v2
@@ -59,6 +54,16 @@ jobs:
           push-if-not-clean: true
           request-changes-if-not-clean: false
           push-token: ${{ steps.get-github-app-token.outputs.token }}
+
+      - name: Run ESLint
+        uses: CatChen/eslint-suggestion-action@v4
+        if: ${{ matrix.os == 'ubuntu-latest' }} # Prettier replaces \n with \r\n on Windows
+        with:
+          targets: 'src'
+          fail-check: ${{ github.event_name == 'workflow_call' || (github.event_name == 'push' && github.ref == 'refs/heads/main') }}
+
+      - name: Validate code with TypeScript
+        run: yarn build
 
       - name: Validate code with Flow
         run: yarn flow

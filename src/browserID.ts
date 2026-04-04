@@ -3,14 +3,13 @@ import { Storage } from 'versioned-storage';
 
 const STORAGE_NAME = 'browser_id';
 const STORAGE_VERSION = 1;
-const storage: Storage<string | undefined> = new Storage(
-  STORAGE_NAME,
-  STORAGE_VERSION,
-);
+let storage: Storage<string | undefined> | undefined;
 
-function readBrowserId(): string | null {
-  const existingID = storage.read();
-  return existingID ?? null;
+function getStorage(): Storage<string | undefined> {
+  if (!storage) {
+    storage = new Storage(STORAGE_NAME, STORAGE_VERSION);
+  }
+  return storage;
 }
 
 /**
@@ -20,13 +19,13 @@ function readBrowserId(): string | null {
  * @returns {string} The existing or newly generated browser identifier.
  */
 export function getBrowserId(): string {
-  const existingID = readBrowserId();
-  if (existingID !== null) {
+  const existingID = getStorage().read();
+  if (existingID != null) {
     return existingID;
   }
 
   const newID = uuid();
-  storage.write(newID);
+  getStorage().write(newID);
   return newID;
 }
 
@@ -43,7 +42,7 @@ export function browserId(): string {
  * @returns {boolean} True if a browser ID is currently persisted.
  */
 export function hasBrowserId(): boolean {
-  return readBrowserId() !== null;
+  return getStorage().read() != null;
 }
 
 /**
@@ -51,7 +50,7 @@ export function hasBrowserId(): boolean {
  * @returns {void}
  */
 export function deleteBrowserId(): void {
-  Storage.reset();
+  getStorage().write(undefined);
 }
 
 /**
@@ -60,6 +59,6 @@ export function deleteBrowserId(): void {
  */
 export function rotateBrowserId(): string {
   const newID = uuid();
-  storage.write(newID);
+  getStorage().write(newID);
   return newID;
 }

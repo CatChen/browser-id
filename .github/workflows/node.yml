@@ -65,6 +65,9 @@ jobs:
       - name: Validate code with TypeScript
         run: yarn build
 
+      - name: Validate package exports
+        run: node -e 'import("./index.js")'
+
       - name: Validate code with Flow
         run: yarn flow
 

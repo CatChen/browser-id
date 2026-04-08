@@ -97,6 +97,12 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Use Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          check-latest: true
+
       - name: Enable Corepack
         run: corepack enable && corepack install
 
@@ -109,12 +115,8 @@ jobs:
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Use Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          check-latest: true
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - run: yarn install --immutable
 

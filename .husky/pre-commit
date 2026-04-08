@@ -1,6 +1,6 @@
-VERSION=$(cat package.json | yarn --silent json 'version')
-VERSIONED_STORAGE_SEMVER=$(cat package.json | yarn --silent json 'dependencies.versioned-storage')
-cat deno.json | yarn --silent json -e 'this.version = "'"$VERSION"'"' | yarn --silent json -e 'this.imports["@catchen/versioned-storage"] = "jsr:@catchen/versioned-storage@'"$VERSIONED_STORAGE_SEMVER"'"' > deno.sync.json
+VERSION=$(cat package.json | yarn json 'version')
+VERSIONED_STORAGE_SEMVER=$(cat package.json | yarn json 'dependencies.versioned-storage')
+cat deno.json | yarn json -e 'this.version = "'"$VERSION"'"' | yarn json -e 'this.imports["@catchen/versioned-storage"] = "jsr:@catchen/versioned-storage@'"$VERSIONED_STORAGE_SEMVER"'"' > deno.sync.json
 mv -f deno.sync.json deno.json
 yarn prettier --write deno.json
 git add deno.json

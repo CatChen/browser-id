@@ -2,14 +2,12 @@
   "version": "5",
   "specifiers": {
     "jsr:@catchen/versioned-storage@^4.0.6": "4.0.6",
-    "npm:@babel/plugin-transform-modules-commonjs@^7.25.9": "7.27.1_@babel+core@7.27.4",
     "npm:@eslint/eslintrc@^3.2.0": "3.3.1",
     "npm:@eslint/js@^10.0.1": "10.0.1_eslint@10.0.0",
     "npm:@ianvs/prettier-plugin-sort-imports@^4.7.1": "4.7.1_prettier@3.5.3",
     "npm:@types/jest@30": "30.0.0",
     "npm:codecov@^3.6.1": "3.8.3",
     "npm:eslint-config-prettier@^10.0.1": "10.1.5_eslint@10.0.0",
-    "npm:eslint-plugin-flowtype@^8.0.2": "8.0.3_@babel+plugin-syntax-flow@7.27.1__@babel+core@7.27.4_@babel+plugin-transform-react-jsx@7.27.1__@babel+core@7.27.4_eslint@10.0.0",
     "npm:eslint-plugin-prettier@^5.2.1": "5.4.1_eslint@10.0.0_eslint-config-prettier@10.1.5__eslint@10.0.0_prettier@3.5.3",
     "npm:eslint@10": "10.0.0",
     "npm:flow-bin@0.308": "0.308.0",
@@ -77,12 +75,6 @@
         "@jridgewell/gen-mapping",
         "@jridgewell/trace-mapping",
         "jsesc"
-      ]
-    },
-    "@babel/helper-annotate-as-pure@7.27.3": {
-      "integrity": "sha512-fXSwMQqitTGeHLBC08Eq5yXz2m37E4pJX1qAU1+2cNedz/ifv/bVXft90VeSav5nFO61EcNgwr0aJxbyPaWBPg==",
-      "dependencies": [
-        "@babel/types"
       ]
     },
     "@babel/helper-compilation-targets@7.27.2": {
@@ -160,13 +152,6 @@
     },
     "@babel/plugin-syntax-class-static-block@7.14.5_@babel+core@7.27.4": {
       "integrity": "sha512-b+YyPmr6ldyNnM6sqYeMWE+bgJcJpO6yS4QD7ymxgH34GBPNDM/THBh8iunyvKIZztiwLH4CJZ0RxTk9emgpjw==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/helper-plugin-utils"
-      ]
-    },
-    "@babel/plugin-syntax-flow@7.27.1_@babel+core@7.27.4": {
-      "integrity": "sha512-p9OkPbZ5G7UT1MofwYFigGebnrzGJacoBSQM0/6bi/PUMVE+qlWDD/OalvQKbwgQzU6dl0xAv6r4X7Jme0RYxA==",
       "dependencies": [
         "@babel/core",
         "@babel/helper-plugin-utils"
@@ -261,25 +246,6 @@
       "dependencies": [
         "@babel/core",
         "@babel/helper-plugin-utils"
-      ]
-    },
-    "@babel/plugin-transform-modules-commonjs@7.27.1_@babel+core@7.27.4": {
-      "integrity": "sha512-OJguuwlTYlN0gBZFRPqwOGNWssZjfIUdS7HMYtN8c1KmwpwHFBwTeFZrg9XZa+DFTitWOW5iTAG7tyCUPsCCyw==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/helper-module-transforms",
-        "@babel/helper-plugin-utils"
-      ]
-    },
-    "@babel/plugin-transform-react-jsx@7.27.1_@babel+core@7.27.4": {
-      "integrity": "sha512-2KH4LWGSrJIkVf5tSiBFYuXDAoWRq2MMwgivCf+93dd0GQi8RXLjKA/0EvRnVV5G0hrHczsquXuD01L8s6dmBw==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/helper-annotate-as-pure",
-        "@babel/helper-module-imports",
-        "@babel/helper-plugin-utils",
-        "@babel/plugin-syntax-jsx",
-        "@babel/types"
       ]
     },
     "@babel/template@7.27.2": {
@@ -1362,16 +1328,6 @@
       ],
       "bin": true
     },
-    "eslint-plugin-flowtype@8.0.3_@babel+plugin-syntax-flow@7.27.1__@babel+core@7.27.4_@babel+plugin-transform-react-jsx@7.27.1__@babel+core@7.27.4_eslint@10.0.0": {
-      "integrity": "sha512-dX8l6qUL6O+fYPtpNRideCFSpmWOUVx5QcaGLVqe/vlDiBSe4vYljDWDETwnyFzpl7By/WVIu6rcrniCgH9BqQ==",
-      "dependencies": [
-        "@babel/plugin-syntax-flow",
-        "@babel/plugin-transform-react-jsx",
-        "eslint",
-        "lodash",
-        "string-natural-compare"
-      ]
-    },
     "eslint-plugin-prettier@5.4.1_eslint@10.0.0_eslint-config-prettier@10.1.5__eslint@10.0.0_prettier@3.5.3": {
       "integrity": "sha512-9dF+KuU/Ilkq27A8idRP7N2DH8iUR6qXcjF3FR2wETY21PZdBrIjwCau8oboyGj9b7etWmTGEeM8e7oOed6ZWg==",
       "dependencies": [
@@ -2278,9 +2234,6 @@
     "lodash.memoize@4.1.2": {
       "integrity": "sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag=="
     },
-    "lodash@4.17.21": {
-      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
-    },
     "log-update@6.1.0": {
       "integrity": "sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==",
       "dependencies": [
@@ -2656,9 +2609,6 @@
         "strip-ansi@6.0.1"
       ]
     },
-    "string-natural-compare@3.0.1": {
-      "integrity": "sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw=="
-    },
     "string-width@4.2.3": {
       "integrity": "sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==",
       "dependencies": [
@@ -2994,14 +2944,12 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:@babel/plugin-transform-modules-commonjs@^7.25.9",
         "npm:@eslint/eslintrc@^3.2.0",
         "npm:@eslint/js@^10.0.1",
         "npm:@ianvs/prettier-plugin-sort-imports@^4.7.1",
         "npm:@types/jest@30",
         "npm:codecov@^3.6.1",
         "npm:eslint-config-prettier@^10.0.1",
-        "npm:eslint-plugin-flowtype@^8.0.2",
         "npm:eslint-plugin-prettier@^5.2.1",
         "npm:eslint@10",
         "npm:flow-bin@0.308",

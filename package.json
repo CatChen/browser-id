@@ -48,7 +48,6 @@
     "versioned-storage": "^4.0.6"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.25.9",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^10.0.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
@@ -56,7 +55,6 @@
     "codecov": "^3.6.1",
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-flowtype": "^8.0.2",
     "eslint-plugin-prettier": "^5.2.1",
     "flow-bin": "^0.308.0",
     "is-ci": "^4.1.0",

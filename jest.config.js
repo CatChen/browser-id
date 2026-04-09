@@ -5,13 +5,15 @@ export default {
   preset: 'ts-jest/presets/default-esm',
   extensionsToTreatAsEsm: ['.ts'],
   transform: {
-    '^.+\\.tsx?$': [
+    '^.+\\.[tj]sx?$': [
       'ts-jest',
       {
         useESM: true,
+        tsconfig: {
+          allowJs: true,
+        },
       },
     ],
-    '\\.jsx?$': 'babel-jest',
   },
   transformIgnorePatterns: ['node_modules/(?!(uuid|versioned-storage))'],
   moduleNameMapper: {

@@ -12,6 +12,12 @@ function getStorage(): Storage<string | undefined> {
   return storage;
 }
 
+function generateAndWriteId(): string {
+  const newID = uuid();
+  getStorage().write(newID);
+  return newID;
+}
+
 /**
  * Returns a consistent unique identifier for this browser (or the Node/Deno environment).
  *
@@ -24,9 +30,7 @@ export function getBrowserId(): string {
     return existingID;
   }
 
-  const newID = uuid();
-  getStorage().write(newID);
-  return newID;
+  return generateAndWriteId();
 }
 
 /**
@@ -58,7 +62,5 @@ export function deleteBrowserId(): void {
  * @returns {string} The newly generated browser identifier.
  */
 export function rotateBrowserId(): string {
-  const newID = uuid();
-  getStorage().write(newID);
-  return newID;
+  return generateAndWriteId();
 }

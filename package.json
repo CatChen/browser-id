@@ -1,6 +1,6 @@
 {
   "name": "browser-id",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "Unique ID for current browser (client).",
   "license": "MIT",
   "repository": {

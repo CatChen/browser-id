@@ -10,7 +10,7 @@ import {
 jest.mock('versioned-storage');
 jest.dontMock('uuid');
 
-const MockedStorage = Storage as jest.MockedClass<typeof Storage<string>>;
+const MockedStorage = jest.mocked(Storage);
 let storedId: string | null = null;
 
 beforeEach(() => {

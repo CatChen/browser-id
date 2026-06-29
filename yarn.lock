@@ -2124,7 +2124,6 @@ __metadata:
     ts-jest: "npm:^29.2.5"
     typescript: "npm:^6.0.2"
     typescript-eslint: "npm:^8.15.0"
-    uuid: "npm:^14.0.0"
     versioned-storage: "npm:^4.0.6"
   dependenciesMeta:
     husky:
@@ -5476,15 +5475,6 @@ __metadata:
   dependencies:
     fast-url-parser: "npm:^1.1.3"
   checksum: 10c0/6fe2bfa0510fa395d489a73841f8c7e8eeb78331589a12f05b1e8f22d235d6999524579f17458f2b7856efd39f4b8347ef446acbf35c08d8b548d6d95f3b842f
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^14.0.0":
-  version: 14.0.1
-  resolution: "uuid@npm:14.0.1"
-  bin:
-    uuid: dist-node/bin/uuid
-  checksum: 10c0/2d961289097cb68c37d93d1da0b5c3aafc1eb9948a455cca8d0ae53a099b2fe583b8933254a84097f700e6bac2e23033364904df0467c22551d5d9611febcaf6
   languageName: node
   linkType: hard
 

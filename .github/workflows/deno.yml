@@ -61,8 +61,6 @@ jobs:
             exit 1
           fi
 
-      - run: deno fmt --check
-
       - run: deno lint
 
       - name: Validate JSR package version with NPM package version

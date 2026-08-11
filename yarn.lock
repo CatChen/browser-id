@@ -5304,8 +5304,8 @@ __metadata:
   linkType: hard
 
 "versioned-storage@npm:^4.0.6":
-  version: 4.0.21
-  resolution: "versioned-storage@npm:4.0.21"
+  version: 4.0.22
+  resolution: "versioned-storage@npm:4.0.22"
   dependencies:
     husky: "npm:^9.1.4"
     lint-staged: "npm:^17.0.0"
@@ -5314,7 +5314,7 @@ __metadata:
       optional: true
     lint-staged:
       optional: true
-  checksum: 10c0/2606d1c7bb6c8564561d6f81ad92ce6422e42adf65ce74053c895bfc81f6c11ceaa9fa01d686ea68791997278489bf008ef9966ab9d4cffc8d7d214f2d06a070
+  checksum: 10c0/142899a86f958b4a8c2d11cc186f3c9665340aef10ffc8277c7897f8908c6f20701515a3023be7881a3545d8d62ed9c7bc2a9b8f4548b3341efcd00a1ccfeeec
   languageName: node
   linkType: hard
 

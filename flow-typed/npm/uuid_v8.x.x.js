@@ -4,12 +4,12 @@
 declare module 'uuid' {
   // v1 (Timestamp)
   declare type V1Options = {|
-    node?: $ReadOnlyArray<number>,
+    node?: ReadonlyArray<number>,
     clockseq?: number,
     msecs?: number,
     nsecs?: number,
-    random?: $ReadOnlyArray<number>,
-    rng?: () => $ReadOnlyArray<number>,
+    random?: ReadonlyArray<number>,
+    rng?: () => ReadonlyArray<number>,
   |};
 
   declare export function v1(options?: V1Options): string;
@@ -22,13 +22,13 @@ declare module 'uuid' {
 
   // v3 (Namespace)
   declare function v3Impl(
-    name: string | $ReadOnlyArray<number>,
-    namespace: string | $ReadOnlyArray<number>
+    name: string | ReadonlyArray<number>,
+    namespace: string | ReadonlyArray<number>
   ): string;
 
   declare function v3Impl(
-    name: string | $ReadOnlyArray<number>,
-    namespace: string | $ReadOnlyArray<number>,
+    name: string | ReadonlyArray<number>,
+    namespace: string | ReadonlyArray<number>,
     buffer: Array<number>,
     offset?: number
   ): Array<number>;
@@ -41,8 +41,8 @@ declare module 'uuid' {
 
   // v4 (Random)
   declare type V4Options = {|
-    random?: $ReadOnlyArray<number>,
-    rng?: () => $ReadOnlyArray<number>,
+    random?: ReadonlyArray<number>,
+    rng?: () => ReadonlyArray<number>,
   |};
 
   declare export function v4(options?: V4Options): string;
@@ -55,13 +55,13 @@ declare module 'uuid' {
 
   // v5 (Namespace)
   declare function v5Impl(
-    name: string | $ReadOnlyArray<number>,
-    namespace: string | $ReadOnlyArray<number>
+    name: string | ReadonlyArray<number>,
+    namespace: string | ReadonlyArray<number>
   ): string;
 
   declare function v5Impl(
-    name: string | $ReadOnlyArray<number>,
-    namespace: string | $ReadOnlyArray<number>,
+    name: string | ReadonlyArray<number>,
+    namespace: string | ReadonlyArray<number>,
     buffer: Array<number>,
     offset?: number
   ): Array<number>;

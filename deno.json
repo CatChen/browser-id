@@ -7,7 +7,7 @@
     "lib": ["deno.window"]
   },
   "lint": {
-    "exclude": ["flow-typed/"]
+    "exclude": ["flow-typed/", "type-tests/"]
   },
   "fmt": {
     "singleQuote": true,

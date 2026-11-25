@@ -4,7 +4,7 @@
 declare module 'uuid' {
   declare export type UUIDTypes<T extends Uint8Array = Uint8Array> = string | T;
 
-  declare export type Version1Options = {|
+  declare export type Version1Options = {
     node?: Uint8Array,
     clockseq?: number,
     random?: Uint8Array,
@@ -12,21 +12,21 @@ declare module 'uuid' {
     msecs?: number,
     nsecs?: number,
     _v6?: boolean,
-  |};
+  };
 
-  declare export type Version4Options = {|
+  declare export type Version4Options = {
     random?: Uint8Array,
     rng?: () => Uint8Array,
-  |};
+  };
 
   declare export type Version6Options = Version1Options;
 
-  declare export type Version7Options = {|
+  declare export type Version7Options = {
     random?: Uint8Array,
     msecs?: number,
     seq?: number,
     rng?: () => Uint8Array,
-  |};
+  };
 
   declare export var MAX: 'ffffffff-ffff-ffff-ffff-ffffffffffff';
   declare export var NIL: '00000000-0000-0000-0000-000000000000';
@@ -54,11 +54,11 @@ declare module 'uuid' {
     buffer: T,
     offset?: number
   ): T;
-  declare export var v3: {|
+  declare export var v3: {
     [[call]]: typeof v3Impl,
     DNS: string,
     URL: string,
-  |};
+  };
 
   declare export function v4(options?: Version4Options): string;
   declare export function v4<T extends Uint8Array>(
@@ -77,11 +77,11 @@ declare module 'uuid' {
     buffer: T,
     offset?: number
   ): T;
-  declare export var v5: {|
+  declare export var v5: {
     [[call]]: typeof v5Impl,
     DNS: string,
     URL: string,
-  |};
+  };
 
   declare export function v6(options?: Version6Options): string;
   declare export function v6<T extends Uint8Array>(
